@@ -1,8 +1,12 @@
+body {
+    margin: 0;
+    padding: 0%;
+ }
 .block-1-header {
     width: 100%;
-    height: 10%;
+    height: 70px;
     background-color:rgb(233, 233, 233);
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +22,6 @@
     text-align: center;
     line-height: 40px;
     cursor: pointer;
-    border-radius: 5px;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -49,7 +52,7 @@
     color: black;
 }
 
-/* Dropdown content */
+
 .block-1-child {
     display: block;
     border: 2px solid black;
@@ -83,5 +86,58 @@
         right: 20px;
         top: 10px;
     }
+} 
+/* Carousel Container */
+.carousel-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    background: #ffffff; /* White background for simplicity */
+    border-radius: 10px;
+    overflow: hidden;
 }
 
+/* Slick Slider Images */
+.carousel-container .slick-slide img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-container .slick-slide img:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* Dots for Carousel */
+.slick-dots {
+    bottom: 10px; /* Position dots closer to the slider */
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+    color: #888;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #000; /* Highlight active dot */
+}
+
+/* Remove Arrows */
+.slick-prev, .slick-next {
+    display: none !important; /* Hide arrows completely */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 100%; /* Full width on smaller screens */
+        padding: 5px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 8px; /* Adjust dot size for smaller screens */
+    }
+}
+    

@@ -1,12 +1,14 @@
 import React from 'react';
-import Header from './components/header';
-import Carousel from './components/slick';
+import {Header , Carousel} from './components/header'
+import Forcheck from './components/forcheck';
+
 
 function App() {
   return (
     <>
       <Header />
-      <Carousel />  
+      <Carousel />
+      <Forcheck/>
     </>
   );
 }

@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+
+  .maincontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .box {
+    width: 25%;
+    height: 400px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .box {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .box {
+      width: 100%;
+    }
+  }

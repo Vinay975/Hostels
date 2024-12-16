@@ -4,23 +4,55 @@ import '../Styles/forcheck.css'
 const Forcheck = () => {
     return (
         <>
-            {/* <div className="mainblock">
-                <div className="childblock-1">
+            <div class="maincontainer">
+                <div class="box , box1">
                     <div className="block-1-1">
                         <div className="block-11-image"></div>
                     </div>
-                    <div className="block-1-2">Hostel</div>
-                    <div className="block-1-3"></div>
+                    <div className="block-1-2">
+                        <div className="forname">HOSTELS</div>
+                    </div>
+                    <div className="block-1-3">
+                        <div className="formatter">Explore more boys and girls hostel click here</div>
+                        <div className="forbutton">Click here</div>
+                    </div>
                 </div>
-                <div className="childblock-2"></div>
-                <div className="childblock-3"></div>
-                <div className="childblock-4"></div>
-            </div> */}
-            <div class="maincontainer">
-                <div class="box">Box 1</div>
-                <div class="box">Box 2</div>
-                <div class="box">Box 3</div>
-                <div class="box">Box 4</div>
+                <div class="box , box2">
+                <div className="block-1-1">
+                        <div className="block-11-image"></div>
+                    </div>
+                    <div className="block-1-2">
+                        <div className="forname">APARMENTS</div>
+                    </div>
+                    <div className="block-1-3">
+                        <div className="formatter">Explore more Apartments in your area</div>
+                        <div className="forbutton">Click here</div>
+                    </div>
+                </div>
+                <div class="box box3">
+                <div className="block-1-1">
+                        <div className="block-11-image"></div>
+                    </div>
+                    <div className="block-1-2">
+                        <div className="forname">STUDY HALLS</div>
+                    </div>
+                    <div className="block-1-3">
+                        <div className="formatter">Explore more Study halls in your area click here</div>
+                        <div className="forbutton">Click here</div>
+                    </div>
+                </div>
+                <div class="box box4">
+                <div className="block-1-1">
+                        <div className="block-11-image"></div>
+                    </div>
+                    <div className="block-1-2">
+                        <div className="forname">TO-LETS</div>
+                    </div>
+                    <div className="block-1-3">
+                        <div className="formatter">Check out more rooms in your area click here</div>
+                        <div className="forbutton">Click here</div>
+                    </div>
+                </div>
             </div>
         </>
     )

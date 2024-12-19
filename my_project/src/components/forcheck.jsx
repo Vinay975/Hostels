@@ -1,11 +1,11 @@
-import React from "react"
-import '../Styles/forcheck.css'
+import React from "react";
+import '../Styles/forcheck.css';
 
 const Forcheck = () => {
     return (
         <>
-            <div class="maincontainer">
-                <div class="box , box1">
+            <div className="maincontainer">
+                <div className="box box1">
                     <div className="block-1-1">
                         <div className="block-11-image"></div>
                     </div>
@@ -17,20 +17,20 @@ const Forcheck = () => {
                         <div className="forbutton">Click here</div>
                     </div>
                 </div>
-                <div class="box , box2">
-                <div className="block-1-1">
+                <div className="box box2">
+                    <div className="block-1-1">
                         <div className="block-11-image"></div>
                     </div>
                     <div className="block-1-2">
-                        <div className="forname">APARMENTS</div>
+                        <div className="forname">APARTMENTS</div>
                     </div>
                     <div className="block-1-3">
                         <div className="formatter">Explore more Apartments in your area</div>
                         <div className="forbutton">Click here</div>
                     </div>
                 </div>
-                <div class="box box3">
-                <div className="block-1-1">
+                <div className="box box3">
+                    <div className="block-1-1">
                         <div className="block-11-image"></div>
                     </div>
                     <div className="block-1-2">
@@ -41,8 +41,8 @@ const Forcheck = () => {
                         <div className="forbutton">Click here</div>
                     </div>
                 </div>
-                <div class="box box4">
-                <div className="block-1-1">
+                <div className="box box4">
+                    <div className="block-1-1">
                         <div className="block-11-image"></div>
                     </div>
                     <div className="block-1-2">
@@ -55,6 +55,7 @@ const Forcheck = () => {
                 </div>
             </div>
         </>
-    )
-}
-export default Forcheck
+    );
+};
+
+export default Forcheck;

@@ -1,0 +1,13 @@
+.bar{
+    height: 50px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+.searchbar{
+width: 500px;
+border: none;
+border-radius: 30px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.325);
+}

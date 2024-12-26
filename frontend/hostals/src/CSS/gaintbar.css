@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .bar{
     height: 50px;
     width: 100%;
@@ -9,5 +11,15 @@
 width: 500px;
 border: none;
 border-radius: 30px;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.325);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.163);
+outline: none;
+font-size: 20px;
+transition: all 0.3s ease;
+padding-left: 40px;
+padding-right: 40px;
+font-family: "Poppins", sans-serif;
+caret-color:rgb(91, 10, 157);
+/* text-rendering: optimizeLegibility; */
+font-weight: 700; 
+
 }

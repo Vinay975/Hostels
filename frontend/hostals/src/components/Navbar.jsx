@@ -5,13 +5,16 @@ import { IoMenuSharp } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import Gaintbar from "./Gaintbar";
 const Navbar = () => {
+    const profile_action = ()=>{
+        
+    }
     return (
         <>
             <nav className="topnav">
                 <div className="logo"><a href="/">Logo</a></div>
                 <Link to="/" className="Link"><div className="location">Location</div></Link>
     <Link to="/ownerdashboard" className="Link"><div className="navdiv b">Add Your Place</div></Link>
-    <div className="c"><IoMenuSharp /><CgProfile /></div>
+    <div className="c" onClick={}><IoMenuSharp/><CgProfile /></div>
 
             </nav>
             <Gaintbar/>

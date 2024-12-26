@@ -55,6 +55,7 @@ a{
     gap: 5px;
     font-size: 20px;
     right: 30px;
+    cursor: pointer;
     /* background-color:rgb(91, 10, 157); */
 }
 .Link{

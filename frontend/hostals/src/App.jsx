@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Login from './components/profile/Login'
 import Addurhome from './components/profile/Addurhome'
 import Signup from './components/profile/Signup'
+import '../src/App.css'
 import { createBrowserRouter ,RouterProvider,Route} from 'react-router-dom'
 function App() {
   const router = createBrowserRouter([

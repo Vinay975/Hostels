@@ -14,7 +14,8 @@ const Navbar = () => {
     }
     return (
         <>
-            <nav className="topnav">
+           <div className="topbar">
+           <nav className="topnav">
                 <div className="logo"><a href="/">Logo</a></div>
                 <Link to="/" className="Link"><div className="location">Location</div></Link>
     <Link to="/Addyourhome" className="Link"><div className="navdiv b">Add Your Place</div></Link>
@@ -22,6 +23,7 @@ const Navbar = () => {
             </nav>
             <Gaintbar/>
            {clicked && ( <Userin/>)}
+           </div>
         </>
     )
 };

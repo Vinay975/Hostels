@@ -15,7 +15,7 @@
 .navdiv{
     padding: 10px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 25px;
     
     
 }
@@ -23,7 +23,7 @@
     background-color: white;
 }
 .navdiv:hover{
-    background-color:rgb(91, 10, 157);
+    background-color:rgb(49, 57, 251);
     color: white;
     transition-delay: 0.1s;
     transition-duration: 0.2s;

@@ -8,7 +8,7 @@ import { HiOutlineBuildingOffice } from "react-icons/hi2";
 import "./cats.css";
 const Cats = (props) => {
     return (
-        <div>
+        <div className="catsbar">
             <div className="menucats">
                 <div className="option hotal"><div className="iconmenu"><MdOutlineFoodBank /> </div>
                     <p>hotel</p>

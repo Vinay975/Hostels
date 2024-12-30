@@ -1,10 +1,10 @@
 import React from "react"
-
+import Cats from "./menu/Cats";
 const Home = (props) => {
   return (
-    <div>
-      <h1>heyy this is home</h1>
-    </div>
+   <>
+   <Cats/>
+   </>
   )
 };
 

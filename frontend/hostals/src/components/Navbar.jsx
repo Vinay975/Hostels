@@ -10,7 +10,7 @@ const Navbar = () => {
     const [clicked , setclicked] = useState(false);
     const profile_action = ()=>{
         setclicked(!clicked);
-        console.log("heyy fuck u");
+        
     }
     return (
         <>

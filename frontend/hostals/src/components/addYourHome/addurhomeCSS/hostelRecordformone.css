@@ -1,0 +1,139 @@
+.HostelRecord-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .HostelRecord-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .HostelRecord-first-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .HostelRecord-form-box {
+    flex: 1;
+    padding: 15px;  
+    border: 2px solid #8a2be2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9ff;
+  }
+  
+  .HostelRecord-form-box fieldset {
+    border: none;
+  }
+  
+  .HostelRecord-form-box legend {
+    font-weight: bold;
+    color: #8a2be2;
+  }
+  
+  .HostelRecord-form-box input,
+  .HostelRecord-form-box textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  
+  /* Dropdown styling */
+  .HostelRecord-form-box select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* WiFi availability */
+  .wifi-availability {
+    margin-bottom: 15px;
+  }
+  
+  /* Sharing options section */
+  .sharing-options {
+    margin-top: 15px;
+  }
+  
+  .sharing-options label {
+    font-weight: 520;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #333;
+  }
+  
+  /* General styling */
+  .HostelRecord-third-row {
+    margin-top: 20px;
+  }
+  
+  .HostelRecord-form-box {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .HostelRecord-form-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Fieldset and Legend */
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  
+  legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* color: #4a4e69; */
+    /* background: #9a8c98; */
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  input, textarea, select {
+    width: 90%;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* transition: box-shadow 0.3s ease, transform 0.3s ease; */
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(58, 123, 213, 0.5);
+    /* transform: scale(1.9); */
+  }

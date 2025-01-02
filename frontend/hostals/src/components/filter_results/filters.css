@@ -33,10 +33,6 @@
     /* margin: 10px; */
 }
 .details{
-    display: flex;
-    flex-direction: column;
     background-color: bisque;
-
     width: 99%;
-    /* margin: 10px; */
 }

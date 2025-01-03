@@ -11,7 +11,7 @@ const FlatApartment = () => {
                     Back
                 </button>
         <button onClick={() => {
-            navigate("/fartapartment-final-submit")
+            navigate("/final-submit")
         }}> next</button>
         </>
     );

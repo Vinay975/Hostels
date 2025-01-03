@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const ToletForm = () => {
+const FarmHouse = () => {
 
     const navigate = useNavigate();
     return(
         <>
-        <h1>Hloo this is To-lets page</h1>
+        <h1>Hloo this is Farmhouse Page</h1>
         <button className="flat-apartment-back-button" onClick={() => navigate(-1)}>
                     Back
                 </button>
@@ -17,4 +17,4 @@ const ToletForm = () => {
     );
 }
 
-export default ToletForm;
+export default FarmHouse;

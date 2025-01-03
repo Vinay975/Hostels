@@ -6,10 +6,12 @@ import Addurhome from './components/profile/Addurhome'
 import DescriblePlace from './components/addYourHome/describleplace'
 import HostelRecordFormOne from './components/addYourHome/hostelrecord-1'
 import HostelRecordFormTwo from './components/addYourHome/hostelrecord-2'
-import FinalSubmit from './components/addYourHome/final-submit'
 import FlatApartment from './components/addYourHome/flataprtment'
-import FlatApartmentSubmit from './components/addYourHome/flatapartment-submit'
 import ToletForm from './components/addYourHome/toletform'
+import ReadingRoom from './components/addYourHome/readingrooms'
+import Hotel from './components/addYourHome/hotel'
+import FarmHouse from './components/addYourHome/farmhouse'
+import FinalSubmit from './components/addYourHome/final-submit'
 import Signup from './components/profile/Signup'
 import '../src/App.css'
 import { createBrowserRouter ,RouterProvider,Route} from 'react-router-dom'
@@ -56,13 +58,21 @@ function App() {
       element:<FlatApartment/>
     },
     {
-      path:"/fartapartment-final-submit",
-      element:<FlatApartmentSubmit/>
-    },
-    {
       path:"/to-lets",
       element:<ToletForm/>
     },
+    {
+      path: "/reading-rooms",
+      element:<ReadingRoom/>
+    },
+    {
+      path: "/hotels",
+      element:<Hotel/>
+    },
+    {
+      path:"/farmhouse",
+      element:<FarmHouse/>
+    }
 
   ])
 

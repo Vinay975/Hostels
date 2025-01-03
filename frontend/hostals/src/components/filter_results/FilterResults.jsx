@@ -9,9 +9,11 @@ const FilterResults = (props) => {
             <div className="placecard">
             <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
             <div className="info">
-                <h2 className="">Hostel Name</h2>
-                <p>Location</p>
-                <p>Price</p>
+                <div className="place title">
+                Hostel Name</div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
             </div>
             </div>
          </div>

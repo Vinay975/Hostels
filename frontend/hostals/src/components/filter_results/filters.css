@@ -32,7 +32,54 @@
     border-radius: 20px;
     /* margin: 10px; */
 }
-.details{
-    background-color: bisque;
-    width: 99%;
+.place{
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    
+    font-style: normal;   
+}
+.title{
+   
+    font-weight: 700;
+    font-size: 20px;
+}
+.location{
+  
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: hsla(0, 0%, 13%, 0.682);
+
+  
+}
+.info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    width: auto;
+    height: 100px;
+    background-color: tomato;
+    
+}
+.fas{
+    /* font-weight: 400; */
+    font-size: 13px;
+    /* line-height: 20px; */
+}
+.tags{
+  
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: hsla(0, 0%, 13%, 0.682);
+  
+}
+.price{
+   
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: hsla(0, 0%, 13%, 0.682);
+  
 }

@@ -2,7 +2,7 @@
     position: relative;
   display: flex;
   background-color: transparent;
-  z-index: -10;
+  
   height: fit-content;
   justify-content: center;
   /* width: 100%; */

@@ -216,3 +216,4 @@ const placedata = [
         category: "rooms"
     }
 ];
+export default placedata;

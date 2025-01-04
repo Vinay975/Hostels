@@ -1,0 +1,103 @@
+.describeplace-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.describleHeade {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.box-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px; /* Larger box size */
+    height: 150px; /* Consistent height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.box span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .box-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .box-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Back Button */
+.describle-back-button {
+    background-color: rgb(240, 240, 240);
+    margin-left: 46%;
+    margin-top: 70PX;
+    width: 140px;
+    height: 45px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding-left: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Space between text and arrow */
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+  }
+  
+  /* Hover Effect */
+  .describle-back-button:hover {
+    background-color: rgb(49, 57, 251);
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .describle-back-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Arrow Icon */
+  .describle-back-button .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .describle-back-button:hover .arrow {
+    transform: translateX(-5px); /* Move arrow to the left on hover */
+  }
+  

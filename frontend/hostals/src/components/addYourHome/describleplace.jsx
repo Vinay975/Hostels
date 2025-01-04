@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-// import '../public/styles/describleplace.css';
+import "./addurhomeCSS/describleplace.css"
 
 const DescriblePlace = () => {
     const navigate = useNavigate();
@@ -22,7 +22,7 @@ const DescriblePlace = () => {
     return (
         <>
             <div className="describeplace-container">
-                <h1>Which of these best describes your place?</h1>
+                <h1 className="describleHeader">Which of these best describes your place?</h1>
                 <div className="box-grid">
                     {places.map((place, index) => (
                         <div
@@ -36,11 +36,10 @@ const DescriblePlace = () => {
                     ))}
                 </div>
             </div>
-            <div className="describle-button">
-                <button className="describle-back-button" onClick={() => navigate(-1)}>
-                    Back
-                </button>
-            </div>
+            <button className="describle-back-button" onClick={() => navigate(-1)}>
+                <span className="arrow">←</span>
+                <span>Back</span>
+            </button>
         </>
     );
 };

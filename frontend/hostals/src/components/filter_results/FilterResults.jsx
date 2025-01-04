@@ -1,45 +1,152 @@
 import React from "react"
 import "./filters.css";
-import placedata from "../data/Placedata";
-const FilterResults = (props) => {
 
+const FilterResults = (props) => {
   return (
     <div className="filterresults">
         
-        
         <div className="placecards">
-        
-        {placedata.map((place, index) => {
-            
-                // <div className="placecard" key={index}>
-                //     <img src={place.datapic} alt="place" />
-                //     <h3>{place.name}</h3>
-                    
-                //     <p>{place.location}</p>
-                //     <p>{place.price}</p>
-                //     <div className="placetags">
-                //         {place.placetags.map((tag, index) => {
-                //             return <span key={index}>{tag}, </span>
-                //         })}
-                //     </div>
-                // </div>
-             return(
-                <div className="placecard">
-                <div><img className="image" src={place.datapic} alt="" /></div>
-                <div className="info">
-                   <div><div className="line1"> <div className="place title">
-                   {place.name}</div>
-                    </div>
-                    <div className="place rating">&#x2B50;4.3</div></div>
-                   <div className="place location">{place.location}</div>
-                   <div className="place tags">{place.placetags.map((tag, index) => {
-                                return <span key={index}>{tag}, </span>
-                            })}</div>
-                    <div className="place price">{place.price}</div>
-                </div>
-                </div>            
-             );
-        })}
+        <div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div><div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div><div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div><div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div><div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div><div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div><div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div><div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div><div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div><div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div><div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div><div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div><div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div><div className="placecard">
+            <div><img className="image" src="https://a0.muscache.com/im/pictures/d5962b48-8d1d-4dd0-bba6-101137cbe973.jpg?im_w=720&im_format=avif" alt="" /></div>
+            <div className="info">
+               <div className="line1"> <div className="place title">
+                Hostel Name</div>
+                <div className="place rating">&#x2B50;4.3</div></div>
+               <div className="place location">Location </div>
+               <div className="place tags">place tags</div>
+                <div className="place price">Price</div>
+            </div>
+            </div>
          </div>
         
     </div>

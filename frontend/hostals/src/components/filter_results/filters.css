@@ -2,7 +2,7 @@
     position: relative;
   display: flex;
   background-color: transparent;
-  z-index: -1;
+  
   height: fit-content;
   justify-content: center;
   /* width: 100%; */
@@ -18,15 +18,12 @@
     margin-left: 5%;
     top: 25px;
     width: 90%;
-    z-index: 1;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     /* background-color: rgb(20, 121, 210); */
 }
 .placecard{
-    
-    cursor: pointer;
     position: relative;
     display:inline-block;
     flex-direction: column;
@@ -100,13 +97,12 @@
   
 }
 .rating{
-    position: absolute;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: hsla(0, 0%, 13%, 0.682);
-    left: 248px;
-    top: 5.5px;
+    left: 115px;
+    top: 6.5px;
 }
 .line1{
     display: flex;

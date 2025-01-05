@@ -1,0 +1,223 @@
+/* General Form Container */
+.form-2-hostel-form-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Fieldset Styling */
+  .form-2-hostel-form-fieldset {
+    border: none;
+    padding: 20px;
+  }
+  
+  .form-2-hostel-form-legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(49, 57, 251);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Section Titles */
+  .form-2-form-section-title {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Meal Schedule Table */
+  .form-2-meal-schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .form-2-meal-schedule-table th,
+  .form-2-meal-schedule-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .form-2-meal-schedule-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .form-2-meal-input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Photo Upload Section */
+  .form-2-photo-upload {
+    margin-bottom: 20px;
+  }
+  
+  .form-2-photo-upload-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .form-2-photo-upload-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-2-photo-label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-2-photo-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Security and Rent Section */
+  .form-2-security-description {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .form-2-wifi-selection {
+    margin-bottom: 20px;
+  }
+  
+  .form-2-wifi-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Rent Information - Display Rent Share Side by Side */
+  .form-2-rent-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .form-2-rent-item {
+    margin-bottom: 10px;
+  }
+  
+  .form-2-rent-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Action Buttons */
+  .form-2-form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-2-form-actions button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .form-2-form-actions button:disabled {
+    opacity: 0.5;
+  }
+  
+  .form-2-form-actions button:hover:not(:disabled) {
+    background-color: rgb(49, 57, 251);
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .form-2-form-actions button[style*="background-color: #f0f0f0;"] {
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .form-2-form-actions button[style*="background-color: #4CAF50;"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+  }
+  
+  .form-2-form-actions button[style*="background-color: #f0f0f0;"]:hover {
+    background-color: rgb(49, 57, 251);
+  }
+  
+  .form-2-form-actions button[style*="background-color: #4CAF50;"]:hover {
+    background-color: rgb(49, 57, 251);
+  }
+  
+  /* Heading Styles */
+  .form-2-hostel-form-legend {
+    text-decoration: underline;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /* Rent Section Fields */
+  .form-2-rent-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .form-2-photo-upload-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .form-2-meal-schedule-table,
+    .form-2-rent-details {
+      font-size: 0.9em;
+    }
+  
+    .form-2-hostel-form-container {
+      padding: 15px;
+    }
+  
+    /* Rent fields stack on smaller screens */
+    .form-2-rent-details {
+      grid-template-columns: 1fr;
+    }
+  }
+  

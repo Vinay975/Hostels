@@ -1,0 +1,251 @@
+/* General styling */
+.apartment-record-form {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f9f9f9, #e6e6e6);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling */
+  .apartment-record-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Layout */
+  .apartment-record-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .apartment-record-box {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fieldset and legend */
+  .apartment-record-fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .apartment-record-legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007BFF;
+  }
+  
+  /* Inputs and labels */
+  .apartment-record-input,
+  .apartment-record-select {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .apartment-record-input:focus,
+  .apartment-record-select:focus {
+    border-color: #007BFF;
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  .apartment-record-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* File input */
+  .apartment-record-file-container {
+    position: relative;
+  }
+  
+  .apartment-record-file-label {
+    display: block;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .apartment-record-file-label:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .apartment-record-file-input {
+    display: none;
+  }
+  
+  /* Sharing options */
+  .apartment-record-sharing {
+    margin-top: 10px;
+  }
+  
+  .apartment-record-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .apartment-record-checkbox-group label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .apartment-record-checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .apartment-record-checkbox-group input[type="checkbox"]:hover {
+    transform: scale(1.4);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .apartment-record-row {
+      flex-direction: column;
+    }
+  
+    .apartment-record-box {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Buttons */
+  .apartment-record-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .apartment-record-back-button,
+  .apartment-record-submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .apartment-record-back-button {
+    background-color: rgb(240, 240, 240);
+  }
+  
+  .apartment-record-back-button:hover {
+    background-color: rgb(49, 57, 251);
+    transform: scale(1.1);
+    color: white;
+  }
+  
+  .apartment-record-submit-button {
+    background-color: rgb(240, 240, 240);
+  }
+  
+  .apartment-record-submit-button:hover {
+    background-color: rgb(49, 57, 251);
+    color: white;
+    transform: scale(1.1);
+  }
+/* Arrow Styling */
+.arrow {
+    display: inline-block;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Back Button Hover */
+.apartment-back-button:hover .arrow {
+    transform: translateX(-5px); /* Move arrow left */
+}
+
+/* Next Button Hover */
+.apartment-next-button:hover .arrow {
+    transform: translateX(5px); /* Move arrow right */
+}
+
+/* Layout adjustments for back and next buttons */
+.apartment-back-button,
+.apartment-next-button {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adds space between the arrow and text */
+    background-color: #74787c14;
+    /* color: white; */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.apartment-back-button:hover,
+.apartment-next-button:hover {
+    background-color: 
+    rgb(0, 123, 255);
+    color:white;
+}
+
+.apartment-back-button:disabled,
+.apartment-next-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.a.apartment-record-checkbox-container {
+    margin-top: 1rem;
+}
+
+.apartment-record-checkbox-label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.apartment-record-checkbox-container div {
+    display: flex;
+    gap: 1rem; /* Add spacing between checkboxes */
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.apartment-record-checkbox-container label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    font-size: 1rem;
+}

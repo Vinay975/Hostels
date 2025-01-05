@@ -1,0 +1,206 @@
+/* Container for the entire apartment details section */
+.apartment-details-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styles */
+  .apartment-details-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  /* Section for photo upload */
+.apartment-details-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  
+  .apartment-details-photos h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #007bff;
+    width: 100%; /* Ensure the heading takes up the full width */
+  }
+  
+  /* Modify the photo upload box to position inputs properly */
+  .apartment-details-photo-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 15px; /* Space below each input */
+    width: calc(33.333% - 10px); /* Adjust width to ensure side-by-side placement */
+  }
+  
+  .apartment-details-photo-upload input[type="file"] {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+  }
+  
+  .apartment-details-photo-upload input[type="file"]::placeholder {
+    color: #aaa;
+  }
+  
+  /* Adjust the layout for smaller screens */
+  @media screen and (max-width: 768px) {
+    .apartment-details-photo-upload {
+      width: 100%; /* Full width on small screens */
+    }
+    
+    .apartment-details-photos {
+      justify-content: center; /* Center the photo upload section */
+    }
+  }
+  
+  
+  /* Furnishing select dropdown */
+  .apartment-details-furnishing, 
+  .apartment-details-policy, 
+  .apartment-details-security, 
+  .apartment-details-advantages,
+  .apartment-details-rent {
+    margin-bottom: 20px;
+  }
+  
+  .apartment-details-furnishing select,
+  .apartment-details-policy textarea,
+  .apartment-details-security textarea,
+  .apartment-details-advantages textarea,
+  .apartment-details-rent-inputs input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .apartment-details-policy textarea,
+  .apartment-details-security textarea,
+  .apartment-details-advantages textarea {
+    height: 5 0px;
+  }
+
+  .apartment-details-policy textarea:hover,
+  .apartment-details-security textarea:hover,
+  .apartment-details-advantages textarea:hover {
+    border-color: #007bff; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .apartment-details-rent-inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .apartment-details-rent-inputs input {
+    width: 23%;
+    margin-right: 10px;
+  }
+  
+  .apartment-details-rent-inputs input:hover {
+    border-color: #007bff; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .apartment-details-rent-inputs input:last-child {
+    margin-right: 0;
+  }
+  .apartment-details-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+
+  }
+
+  /* Button styles */
+  .apartment-details-back-button,
+  .apartment-details-submit-button {
+    padding: 10px 20px;
+    /* background-color: #e9ebf005; */
+    /* color: white; */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .apartment-details-back-button {
+    /* background-color: #6c757d; */
+    margin-right: 10px;
+  }
+  
+  .apartment-details-submit-button:disabled {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+  }
+  
+  .apartment-details-back-button:hover,
+  .apartment-details-submit-button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* Placeholder text styling */
+  input::placeholder,
+  textarea::placeholder {
+    color: #aaa;
+  }
+  
+
+  .apartment-details-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .apartment-details-rent-inputs {
+      flex-direction: column;
+    }
+  
+    .apartment-details-rent-inputs input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .apartment-details-actions {
+      flex-direction: column;
+    }
+  
+    .apartment-details-back-button,
+    .apartment-details-submit-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .apartment-details-photo-upload input[type="file"]:hover {
+    border-color: #007bff;
+  }
+
+  .apartment-details-photo-upload input[type="file"]:focus {
+    border-color: #007bff; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+  }

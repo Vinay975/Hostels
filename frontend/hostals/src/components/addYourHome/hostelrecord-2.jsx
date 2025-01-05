@@ -16,12 +16,12 @@ const HostelRecordFormTwo = () => {
     securityDescription: "",
     wifi: "yes",
     rent: {
-      oneSharing: "",
-      twoSharing: "",
-      threeSharing: "",
-      fourSharing: "",
-      fiveSharing: "",
-      advance: "",
+      OneSharing: "",
+      TwoSharing: "",
+      ThreeSharing: "",
+      FourSharing: "",
+      FiveSharing: "",
+      Advance: "",
     },
   });
 
@@ -74,9 +74,7 @@ const HostelRecordFormTwo = () => {
                     <td key={mealType}>
                       <input
                         type="text"
-                        placeholder={
-                          mealType.charAt(0).toUpperCase() + mealType.slice(1)
-                        }
+                        placeholder={mealType.charAt(0).toUpperCase() + mealType.slice(1)}
                         value={formData.meals[index][mealType]}
                         onChange={(e) =>
                           handleInputChange("meals", e.target.value, index, mealType)
@@ -114,7 +112,7 @@ const HostelRecordFormTwo = () => {
         </div>
 
         {/* Security and Rent */}
-        <div className="form-2-additional-details">
+        <div className="form-2-security-rent-container">
           <textarea
             placeholder="Describe security measures..."
             value={formData.securityDescription}
@@ -137,36 +135,29 @@ const HostelRecordFormTwo = () => {
         {/* Rent Details */}
         <div className="form-2-rent-details">
           <h3 className="form-2-form-section-title">Rent Information</h3>
-          {Object.keys(formData.rent).map((key) => (
-            <div className="form-2-rent-item" key={key}>
-              <label>{key.replace("Sharing", " Sharing")}</label>
-              <input
-                type="number"
-                placeholder={`Enter ${key}`}
-                value={formData.rent[key]}
-                onChange={(e) =>
-                  handleInputChange("rent", { ...formData.rent, [key]: e.target.value })
-                }
-                className="form-2-rent-input"
-              />
-            </div>
-          ))}
+          <div className="form-2-rent-grid">
+            {Object.keys(formData.rent).map((key) => (
+              <div className="form-2-rent-item" key={key}>
+                <label>{key.replace("Sharing", " Sharing")}</label>
+                <input
+                  type="number"
+                  placeholder="Enter Amount"
+                  value={formData.rent[key]}
+                  onChange={(e) =>
+                    handleInputChange("rent", { ...formData.rent, [key]: e.target.value })
+                  }
+                  className="form-2-rent-input"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </fieldset>
 
       <div className="form-2-form-actions">
         <button
           onClick={() => navigate(-1)}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "5px",
-            padding: "10px 20px",
-            backgroundColor: "#f0f0f0",
-            border: "1px solid #ccc",
-            borderRadius: "5px",
-            cursor: "pointer",
-          }}
+          className="form-2-back-button"
         >
           <span style={{ fontSize: "1.2em" }}>←</span>
           <span>Back</span>
@@ -174,15 +165,7 @@ const HostelRecordFormTwo = () => {
         <button
           onClick={() => navigate("/final-submit")}
           disabled={!isFormValid()}
-          style={{
-            padding: "10px 20px",
-            backgroundColor: "#4CAF50",
-            color: "white",
-            border: "none",
-            borderRadius: "5px",
-            cursor: "pointer",
-            opacity: isFormValid() ? "1" : "0.5",
-          }}
+          className="form-2-submit-button"
         >
           Submit
         </button>

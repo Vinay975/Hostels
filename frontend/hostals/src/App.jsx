@@ -7,6 +7,7 @@ import DescriblePlace from './components/addYourHome/describleplace'
 import HostelRecordFormOne from './components/addYourHome/hostelrecord-1'
 import HostelRecordFormTwo from './components/addYourHome/hostelrecord-2'
 import FlatApartment from './components/addYourHome/flataprtment'
+import ApartmentDetails from './components/addYourHome/apartmentdetails'
 import ToletForm from './components/addYourHome/toletform'
 import ReadingRoom from './components/addYourHome/readingrooms'
 import Hotel from './components/addYourHome/hotel'
@@ -49,13 +50,14 @@ function App() {
       path:"/hostel-details",
       element:<HostelRecordFormTwo/>
     },
-    {
-      path:"/final-submit",
-      element:<FinalSubmit/>
-    },
+
     {
       path:"/flat-apartment",
       element:<FlatApartment/>
+    },
+    {
+      path:"/apartment-details",
+      element:<ApartmentDetails/>
     },
     {
       path:"/to-lets",
@@ -72,7 +74,11 @@ function App() {
     {
       path:"/farmhouse",
       element:<FarmHouse/>
-    }
+    },
+    {
+      path:"/final-submit",
+      element:<FinalSubmit/>
+    },
 
   ])
 

@@ -82,9 +82,9 @@
   
   /* Hover Effect */
   .describle-back-button:hover {
-    background-color: rgb(49, 57, 251);
-    color: white;
-    transform: scale(1.1);
+        background-color: rgb(49, 57, 251);
+        color: white;
+        transform: scale(1.1);
   }
   
   .describle-back-button:active {

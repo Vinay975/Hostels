@@ -4,9 +4,12 @@ import { FaBed } from "react-icons/fa6";
 import { MdOutlineFoodBank } from "react-icons/md";
 import { HiOutlineBuildingOffice } from "react-icons/hi2";
 
-
+import { useState } from "react";
 import "./cats.css";
 const Cats = (props) => {
+    // const [filterstate, setfilterstate] = useState("none");
+    
+
     return (
         <div className="catsbar">
             <div className="menucats">

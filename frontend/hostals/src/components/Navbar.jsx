@@ -19,7 +19,7 @@ const Navbar = () => {
                 <div className="logo"><a href="/">Logo</a></div>
                 <Link to="/" className="Link"><div className="searchlocation">Location</div></Link>
     <Link to="/Addyourhome" className="Link"><div className="navdiv b">Add Your Place</div></Link>
-    <div className="c" onClick={profile_action}><IoMenuSharp/><CgProfile/></div>
+    <div className="c" onClick={profile_action}><IoMenuSharp/><CgProfile/></div>    
             </nav>
             <Gaintbar/>
            {clicked && ( <Userin/>)}

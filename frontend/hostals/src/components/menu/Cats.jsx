@@ -7,7 +7,7 @@ import { HiOutlineBuildingOffice } from "react-icons/hi2";
 import { useState } from "react";
 import "./cats.css";
 const Cats = (props) => {
-    // const [filterstate, setfilterstate] = useState("none");
+    const [option, setoption] = useState("none");
     
 
     return (

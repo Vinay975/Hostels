@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.7.9",
     "dom": "^0.0.3",
     "lottie-react": "^2.4.0",
     "navigate": "^0.3.6",

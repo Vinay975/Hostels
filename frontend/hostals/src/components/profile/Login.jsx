@@ -1,7 +1,8 @@
-import React from "react"
-import { useState } from "react";
-import "../../CSS/loginsignin.css"
-import { FaUser, FaLock } from 'react-icons/fa';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "../../CSS/loginsignin.css";
+import axios from "axios";
+import { FaUser, FaLock } from "react-icons/fa";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -10,6 +11,7 @@ const Login = () => {
   const [signupPassword, setSignupPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isLogin, setIsLogin] = useState(true);
+  const navigate = useNavigate();
 
   // Form validation
   const isLoginFormValid = email.trim() !== "" && password.trim() !== "";
@@ -20,22 +22,45 @@ const Login = () => {
     signupPassword === confirmPassword;
 
   // Handle form submission
-  const handleLoginSubmit = (event) => {
+  const handleLoginSubmit = async (event) => {
     event.preventDefault();
     if (isLoginFormValid) {
-      console.log("Login submitted with:", { email, password });
+      try {
+        const response = await axios.post("http://localhost:5000/api/auth/login", {
+          email,
+          password,
+        });
+        alert("Login successful");
+        console.log("Login successful:", response.data);
+
+        // Navigate to home after login
+        navigate("/");
+      } catch (error) {
+        alert("Login failed. Please check your credentials.");
+        console.error("Login error:", error.response?.data?.message || error.message);
+      }
     } else {
       console.log("Login form is incomplete.");
     }
   };
 
-  const handleSignupSubmit = (event) => {
+  const handleSignupSubmit = async (event) => {
     event.preventDefault();
     if (isSignupFormValid) {
-      console.log("Signup submitted with:", {
-        email: signupEmail,
-        password: signupPassword,
-      });
+      try {
+        const response = await axios.post("http://localhost:5000/api/auth/signup", {
+          email: signupEmail,
+          password: signupPassword,
+        });
+        alert("Signup successful. Please login.");
+        console.log("Signup successful:", response.data);
+
+        // Switch to login page after signup
+        setIsLogin(true);
+      } catch (error) {
+        alert("Signup failed. Please try again.");
+        console.error("Signup error:", error.response?.data?.message || error.message);
+      }
     } else {
       console.log("Signup form is incomplete or passwords do not match.");
     }
@@ -87,7 +112,7 @@ const Login = () => {
             </div>
           </form>
           <p className="switch-form-text">
-            Don't have an account?{' '}
+            Don't have an account?{" "}
             <span className="switch-form-link" onClick={() => setIsLogin(false)}>
               Sign up here
             </span>
@@ -147,7 +172,7 @@ const Login = () => {
             </div>
           </form>
           <p className="switch-form-text">
-            Already have an account?{' '}
+            Already have an account?{" "}
             <span className="switch-form-link" onClick={() => setIsLogin(true)}>
               Login here
             </span>

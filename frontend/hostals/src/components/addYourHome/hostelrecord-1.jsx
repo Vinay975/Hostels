@@ -75,6 +75,41 @@ const HostelRecordFormOne = () => {
         );
     };
 
+    // Submit form data
+    const handleSubmit = async () => {
+        const formDataToSend = new FormData();
+        
+        Object.keys(formData).forEach((key) => {
+            if (key !== "profilePhoto" && key !== "sharing") {
+                formDataToSend.append(key, formData[key]);
+            }
+        });
+
+        formDataToSend.append("sharing", formData.sharing.join(",")); 
+
+        if (formData.profilePhoto) {
+            formDataToSend.append("profilePhoto", formData.profilePhoto);
+        }
+
+        try {
+            const response = await fetch("http://localhost:5000/api/add-hostel", {
+                method: "POST",
+                body: formDataToSend,
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                alert("Hostel record submitted successfully!");
+                navigate("/hostel-details"); 
+            } else {
+                alert(result.error || "Something went wrong!");
+            }
+        } catch (error) {
+            alert("Error submitting form!");
+            console.error(error);
+        }
+    };
+
     return (
         <div className="hostel-record-form">
             <h2 className="hostel-record-title">Hostel Record Form</h2>
@@ -215,8 +250,8 @@ const HostelRecordFormOne = () => {
                 </button>
                 <button
                     className="hostel-record-submit-button"
-                    disabled={!isFormValid()} // Disable button until all fields are valid
-                    onClick={() => navigate("/hostel-details")}
+                    // disabled={!isFormValid()} // Disable button until all fields are valid
+                    onClick={handleSubmit}
                 >
                     Submit &#8594;
                 </button>

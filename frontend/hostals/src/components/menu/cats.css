@@ -58,6 +58,7 @@
     margin-top: 34px;
 }
 
+
 .option:hover {
     color: black;
     border-bottom: solid 1px rgba(128, 128, 128, 0.252);
@@ -65,3 +66,29 @@
 .option:hover .iconmenu {
     color: black;
 }
+.active_icon{
+    background-color: antiquewhite;
+    height: 0%;
+    width: fit-content;
+    font-size: 30px;
+    color: black;
+    /* margin-top: 5%; */
+}
+.option_active{
+    position: relative;
+    display: inline-flex;
+    /* background-color: yellowgreen; */
+    flex-direction: column;
+    top: 4px;
+    align-items: center;
+    height: 90%;
+    z-index: 100;
+    width: 95px;
+    
+    /* border-radius: 10px; */
+
+    cursor: pointer;
+    color: black;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.252);
+}
+

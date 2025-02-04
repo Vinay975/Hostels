@@ -4,11 +4,11 @@ import { Outlet, Link } from "react-router-dom";
 import { IoMenuSharp } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import Gaintbar from "./Gaintbar";
-import Userin from "./Userin";
+import Userin from "./Userin";  
 
 const Navbar = () => {
     const [clicked , setclicked] = useState(false);
-    const profile_action = ()=>{
+    const profile_action = ()=>{         
         setclicked(!clicked);
         
     }

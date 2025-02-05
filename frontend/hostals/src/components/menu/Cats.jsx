@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { FaRegBuilding } from "react-icons/fa";
 import { FaBed } from "react-icons/fa6";
 import { MdOutlineFoodBank } from "react-icons/md";
@@ -6,7 +6,8 @@ import { HiOutlineBuildingOffice } from "react-icons/hi2";
 
 import { useState } from "react";
 import "./cats.css";
-const Cats = (props) => {
+import { use } from "react";
+const Cats = ({catselect}) => {
     const [hotel, sethotel] = useState(false);
     const [rooms, setrooms] = useState(false);
     const [pgs, setpgs] = useState(false);
@@ -37,7 +38,24 @@ const Cats = (props) => {
         setapartments(!apartments);
     };
 
- 
+ useEffect(() => {
+    if(hotel){
+        catselect("hotel");
+    }   
+   else if(rooms){
+        catselect("rooms");
+    }
+    else if(pgs){
+        catselect("pgs");
+    }
+   else if(apartments){
+        catselect("apartments");
+    }
+    else{
+        catselect(null);
+    }
+    
+    }, [hotel,rooms,pgs,apartments]);
     
  
     return (

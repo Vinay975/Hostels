@@ -2,7 +2,8 @@ import React from "react"
 import "./filters.css";
 import placedata from "../data/Placedata";
 import Filtercards from "./Filtercards";
-const FilterResults = (props) => {
+import { useState, useEffect } from "react";
+const FilterResults = ({selectedcat}) => {
   const displaycard  = (card)=>{
     return(
       <Filtercards
@@ -17,12 +18,24 @@ const FilterResults = (props) => {
     />
     );
   }
+  const [filtereddata, setfiltereddata] = useState([]);
+  useEffect(() => {
+    if(selectedcat == null){
+      setfiltereddata(placedata);
+      console.log("null");
+    }
+    else{
+      setfiltereddata(placedata.filter((place) => place.category == selectedcat));
+    }
+    // console.log(typeof(selectedcat));
+    // alert(selectedcat);
+  }, [selectedcat]);
   return (
     <div className="filterresults">
         
         <div className="placecards">
           {
-            placedata.map(displaycard)
+            filtereddata.map(displaycard)
           }
         </div>
         

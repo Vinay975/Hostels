@@ -1,4 +1,4 @@
-/* Container Styles */
+
 .tellabout-Container {
     width: 100%;
     height: 100svh;
@@ -11,19 +11,18 @@
     justify-content: space-around;
     align-items: center;
   }
-  
-  /* Left Box with Typewriter Animation */
+
   .tellabout-matter {
     width: 40%;
     height: 70%;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
     position: relative;
   }
   
@@ -88,11 +87,11 @@
   .tellabout-animation {
     width: 40%;
     height: 70%;
-    background-color: bisque;
+    /* background-color: bisque; */
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
   }
   
   .tellabout-video {

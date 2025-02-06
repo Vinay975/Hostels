@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Player } from "@lottiefiles/react-lottie-player";
+import homecomig from "../../../public/homecomig.json";
 import "../../../src/components/addYourHome/addurhomeCSS/maincontainer.css";
-
 
 const Addurhome = (props) => {
   return (
@@ -17,12 +18,11 @@ const Addurhome = (props) => {
             </p>
           </div>
           <div className="tellabout-animation">
-            <video
-              src="/animated.webm"
-              autoPlay
+            <Player
+              autoplay
               loop
-              muted
-              className="tellabout-video"
+              src={homecomig}
+              className="tellabout-lottie"
             />
           </div>
         </div>

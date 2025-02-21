@@ -5,6 +5,7 @@ const Hostel = require("../Models/hostel-1-data");
 
 const router = express.Router();
 
+
 // Configure multer for file uploads
 const storage = multer.diskStorage({
     destination: "./uploads/",
